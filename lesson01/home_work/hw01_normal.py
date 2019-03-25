@@ -25,3 +25,23 @@ __author__ = 'Ваши Ф.И.О.'
 # Для вычисления квадратного корня воспользуйтесь функцией sqrt() модуля math:
 # import math
 # math.sqrt(4) - вычисляет корень числа 4
+
+a = int (input ('a='))
+print (a)
+b = int (input ('b='))
+print (b)
+c = int (input ('c='))
+print (c)
+D = b ** 2 - 4*a*c
+print ('D=b*b-4ac',',','D=', D)
+
+if D < 0:
+
+    print('Game over, chuvak!')
+
+elif D > 0:
+    import math
+    print('Uravnenie imeet 2 kornya:', 'x1 =', (-b+int(math.sqrt(D)))/2*a)
+    print('x2 =', (-b-int(math.sqrt(D)))/2*a)
+else:
+    print('U uravneniya tolko 1 koren:', 'x2 =', (-b + int(math.sqrt(D))) / 2 * a)
